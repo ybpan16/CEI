@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+Package = "SeqCall"
+version = "0.1.0"
+description = "Fast, noise counted, replicate-free, abundance-aware detection of clonal expansion"
+readme = "README.md"
+license = {}
+authors = [{ name = "Yunbei Pan", email = "yunbei97@ucla.edu" }]
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=1.5",
+  "scipy>=1.10",
+  "openpyxl>=3.1",
+  "XlsxWriter>=3.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/ybpan16/SeqCall"
+Issues = "https://github.com/ybpan16/SeqCall/issues"
+
+[project.scripts]
+seq-call = "SeqCall.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["SeqCall"]
