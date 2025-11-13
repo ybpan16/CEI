@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: CEI
+Version: 0.1.0
+Summary: Joint library-size permutation, ACAT, and FDR-based expansion detection for TCR clones.
+Author-email: Yunbei Pan <yunbei97@ucla.edu>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: openpyxl

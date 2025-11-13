@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "CEI"
 version = "0.1.0"
-description = "Joint library-size permutation/ACAT and FDR-based expansion detection for TCR clones."
+description = "Joint library-size permutation, ACAT, and FDR-based expansion detection for TCR clones."
 authors = [
     { name = "Yunbei Pan", email = "yunbei97@ucla.edu" }
 ]
@@ -21,7 +21,7 @@ dependencies = [
 ]
 
 [project.scripts]
-tcrjoint = "CEI.api:main"
+cei = "CEI.api:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

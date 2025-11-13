@@ -1,0 +1,2 @@
+[console_scripts]
+cei = CEI.api:main

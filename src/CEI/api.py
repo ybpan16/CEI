@@ -26,20 +26,13 @@ def parse_args():
     p.add_argument("--R-perm", type=int, default=400,
                    help="Number of permutations for joint 2D p-values (default: 400).")
 
-    p.add_argument("--out-2d", default=False,
-                   help="Output Excel filename for 2D hits (default auto).")
-    p.add_argument("--out-joint", default=False,
-                   help="Output Excel filename for joint hits (default auto).")
-    p.add_argument("--out-acat", default=False,
-                   help="Output Excel filename for ACAT hits (default auto).")
-    
-    p.add_argument("--outer_name_2d", default=None,
+    p.add_argument("--out-2d", default=None,
                    help="Output Excel filename for 2D hits (default auto).")
     p.add_argument("--out-joint", default=None,
                    help="Output Excel filename for joint hits (default auto).")
     p.add_argument("--out-acat", default=None,
                    help="Output Excel filename for ACAT hits (default auto).")
-
+    
     return p.parse_args()
 
 def main():
