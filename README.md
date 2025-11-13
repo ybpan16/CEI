@@ -1,6 +1,6 @@
 # CEI
 
-Tools for joint detection of expanded TCR clones using Mahalanobis distances with permutation and ACAT, under FDR control.
+CEI performs tests on paired clone counts (baseline vs post), designed as the joint detection of expanded TCR clones using Mahalanobis distances with permutation and ACAT, under FDR control.
 
 ## Installation
 
