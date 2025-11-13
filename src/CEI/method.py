@@ -131,7 +131,7 @@ def pvals_from_data(zds, zrs, use_unit_var=False):
 # ----------------------------------------------------------------------
 # Joint Mahalanobis + permutation
 # ----------------------------------------------------------------------
-def mahalanobis_distance(Z, mu, target_kappa=500.0, shrink_to_I=0.1, min_ridge=1e-8):
+def mahalanobis_distance(Z, mu, target_kappa=500.0, min_ridge=1e-8):
     X = Z - mu
     n = Z.shape[0]
     Sigma = (X.T @ X) / max(n - 1, 1)
